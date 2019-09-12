@@ -19,7 +19,7 @@ a,ul,li,input,select{
 .selBox{
     width: 7.2rem;
     height:0.95rem;
-    background: linear-gradient(85deg, #EC1555 , #FD6660); /* 标准的语法 */
+    background: linear-gradient(85deg, #4850EE , #336EF0); /* 标准的语法 */
     padding-top: 0.13rem;
     position: fixed;
     top: 0;
@@ -31,8 +31,8 @@ a,ul,li,input,select{
 .midRightSign{
     width: 0.19rem;
     height: 0.19rem;
-    border-top: 0.01rem solid #B2B1B1;
-    border-right: 0.01rem solid #B2B1B1;
+    border-top: 0.02rem solid #B2B1B1;
+    border-right: 0.02rem solid #B2B1B1;
     transform: rotate(45deg);
 }
 
@@ -40,8 +40,8 @@ a,ul,li,input,select{
 .midUpSign{
     width: 0.19rem;
     height: 0.19rem;
-    border-left: 0.01rem solid #b2b1b1;
-    border-top: 0.01rem solid #b2b1b1;
+    border-left: 0.02rem solid #b2b1b1;
+    border-top: 0.02rem solid #b2b1b1;
     transform: rotate(45deg);
 }
 
@@ -56,8 +56,8 @@ a,ul,li,input,select{
     position: absolute;
     width: 0.25rem;
     height: 0.25rem;
-    border-left:0.01rem solid #fff;
-    border-bottom:0.01rem solid #fff;
+    border-left:0.02rem solid #fff;
+    border-bottom:0.02rem solid #fff;
     transform:rotate(45deg);
     top:0.25rem;
     left:0.24rem;
@@ -75,13 +75,13 @@ a,ul,li,input,select{
 .search{
     width: 0.27rem;
     height: 0.27rem;
-    border:0.01rem solid #bdbdbd;
+    border:0.02rem solid #bdbdbd;
     border-radius: 50%;
     position: relative;
 
 }
 .search_tail{
-    border: 0.01rem solid #bdbdbd;
+    border: 0.02rem solid #bdbdbd;
     width: 0.15rem;
     transform: rotate(40deg);
     position: absolute;
@@ -116,7 +116,7 @@ a,ul,li,input,select{
     height: auto;
     background: #fff;
     position: fixed;
-    top:0.96rem;
+    top:0;
     left: 0;
     z-index: 3;
     bottom:0;
@@ -124,7 +124,7 @@ a,ul,li,input,select{
     overflow-x:hidden;
     display: none;
 }
-.searchBox>div{
+.searchBox>div:nth-child(2)>div{
     width: 7.2rem;
     height: 1.05rem;
     line-height: 1.05rem;
@@ -132,5 +132,33 @@ a,ul,li,input,select{
     color:#333;
     text-indent: 0.23rem;
     text-align: left;
-    border-bottom: 0.01rem solid #f3f3f3;
+    border-bottom: 0.02rem solid #f3f3f3;
+}
+
+
+
+/*搜索也打开样式*/
+.inputBox_ex{
+    margin-left: 0.72rem;
+    background: #fff;
+    width: 5.28rem;
+    height: 0.78rem;
+    border-radius: 0.06rem;
+}
+
+.searchInput_ex{
+    float: left;
+    height: .75rem;
+    width: 4rem;
+    border: none;
+    font-size: 0.3rem;
+    outline: none;
+    text-indent: 0.15rem;
+}
+.seaBtn{
+    position: fixed;
+    top: 0.27rem;
+    right: 0.3rem;
+    color:#fff;
+    font-size: 0.32rem;
 }

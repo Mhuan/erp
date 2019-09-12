@@ -30,19 +30,19 @@ html,body{
 }
 
 .bgImg_01{
-    background: url("../data/images/index_01.png") no-repeat;
+    background: url("../../data/images/index_01.png") no-repeat;
     background-size: 100%;
 }
 .bgImg_02{
-    background: url("../data/images/index_02.png") no-repeat;
+    background: url("../../data/images/index_02.png") no-repeat;
     background-size: 100%;
 }
 .bgImg_03{
-    background: url("../data/images/index_03.png") no-repeat;
+    background: url("../../data/images/index_03.png") no-repeat;
     background-size: 100%;
 }
 .bgImg_04{
-    background: url("../data/images/index_04.png") no-repeat;
+    background: url("../../data/images/index_04.png") no-repeat;
     background-size: 100%;
 }
 .fontSizeStyle{

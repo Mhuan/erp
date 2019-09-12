@@ -1,0 +1,120 @@
+.searchList{
+    width: 6.69rem;
+    height:auto;
+    margin: 0 auto;
+    padding-top: 0.24rem;
+    margin-top: 0.95rem;
+}
+
+.searchList>li{
+    width:6.69rem;
+    height:1.97rem;
+    background:#fff;
+    box-shadow:0rem 0.03rem 0.09rem 0rem #bdbdbd;
+    margin-bottom: 0.24rem;
+}
+
+.searchList div{
+    text-indent: 0.2rem;
+}
+.mainLeft{
+    position: relative;
+    height: 1.47rem;
+}
+
+.midRightSign{
+    position: absolute;
+    top:0.54rem;
+    right: 0.3rem;
+}
+
+
+.consignor{
+    font-size: 0.32rem;
+    color:#636363;
+    height: 0.68rem;
+    line-height: 0.68rem;
+}
+.business{
+    font-size: 0.36rem;
+    color: #333;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    font-weight:bold;
+}
+.number{
+    width: 4.09rem;
+}
+.date{
+    width: 2rem;
+    text-align: right;
+}
+.number,.date{
+    color: #B2B1B1;
+    font-size: 0.28rem;
+    float: left;
+}
+
+
+/*无订单状态*/
+.orderBox{
+    width: 7.2rem;
+    height: auto;
+    display: none;
+}
+.emptyOrder{
+    width: 4.91rem;
+    height: 4.29rem;
+    background: url("../../data/images/noInformation-icon.png") no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 3.68rem;
+    left: 1.54rem;
+}
+.tipTxt{
+    width: 7.2rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.3rem;
+    color: #333;
+    font-weight: normal;
+    text-indent: 0.94rem;
+    position: fixed;
+    top: 7.2rem;
+    left: 0;
+}
+
+
+
+.orderSucc{
+    width: 3.49rem;
+    height: 1.84rem;
+    background: #000;
+    border-radius: 0.12rem;
+    font-size: 0.28rem;
+    padding-top: 0.2rem;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 1.16rem;
+    left: 1.86rem;
+    /*display: none;*/
+}
+.checkTheNumber{
+    width: 0.81rem;
+    height: 0.81rem;
+    border: 0.05rem solid #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 0.31rem;
+}
+.sign{
+    width: 0.2rem;
+    height: 0.4rem;
+    border-bottom: 0.05rem solid #fff;
+    border-right: 0.05rem solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.15rem;
+    left: 0.3rem;
+}

@@ -1,0 +1,185 @@
+.selBtn{
+    position: fixed;
+    top:0.95rem;
+    left:0rem;
+    width: 7.2rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background: #f8f8f8;
+    text-align: center;
+    font-size:0.32rem;
+    font-weight:bold;
+    z-index: 1;
+}
+
+.untreated,.processed{
+    float: left;
+    width: 3.6rem;
+}
+
+.proList{
+    width: 7.2rem;
+    height: auto;
+}
+.proList>li{
+    width: 7.2rem;
+    height: 2.16rem;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    padding-top: 0.22rem;
+    position: relative;
+    text-indent: 0.23rem;
+}
+
+.name,.norms{
+    font-size: 0.32rem;
+    color:#333;
+    font-weight: bold;
+    margin-bottom: 0.15rem;
+
+}
+.number{
+    margin-bottom: 0.18rem;
+}
+.number,.firm{
+    font-size: 0.26rem;
+    color:#a9a9a9;
+
+}
+
+.midRightSign{
+    position: absolute;
+    top:1.01rem;
+    right:0.27rem;
+}
+
+
+
+
+/*确认按钮*/
+.confirm{
+    width: 7.2rem;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: center;
+    color: #F33A5A;
+    font-size: 0.32rem;
+    background-color:rgba(243,58,90,0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.confirmBg{
+    width: 7.2rem;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: center;
+    color: #F33A5A;
+    font-size: 0.32rem;
+    background-color:#fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.goodsAfloat{
+    width: 1.5rem;
+    height: 0.7rem;
+    line-height: 0.35rem;
+    text-indent: 0.1rem;
+    text-align: left;
+    color:#EC9738;
+    font-size: 0.2rem;
+    position: absolute;
+    top:0.78rem;
+    right: 0.28rem;
+    background:rgba(239,143,40,0.1);
+    opacity:0.9;
+    border-radius:0.06rem;
+    /*display: none;*/
+}
+
+.fullDelivery{
+    width: 1.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-indent: 0;
+    text-align: center;
+    background:#eefaf6;
+    opacity:0.9;
+    border-radius:0.06rem;
+    color:#78dbbc;
+    font-size: 0.2rem;
+    position: absolute;
+    top:0.83rem;
+    right: 0.28rem;
+    display: none;
+}
+
+
+.deleWindow{
+    width: 5.20rem;
+    height: 4.07rem;
+    background: #fff;
+    border-radius: 0.03rem;
+    position: fixed;
+    top: 4.22rem;
+    left: 1rem;
+    z-index: 4;
+    display: none;
+}
+
+.imgBox{
+    width: 0.98rem;
+    height: 0.98rem;
+    background: url("../../data/images/submitImg.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0.39rem;
+    left: 2.11rem;
+}
+
+
+.tooltip{
+    position: absolute;
+    top:1.5rem;
+    left: 0.71rem;
+    width: 3.81rem;
+    height: 1.14rem;
+    font-size: 0.32rem;
+    color: #323232;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btnStyle{
+    width:4.6rem;
+    height: 0.74rem;
+    position: absolute;
+    top: 3.09rem;
+    left:0.3rem;
+}
+.closeBtn,.deleClose{
+    width: 2.19rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    text-align: center;
+    font-size: 0.32rem;
+    font-weight: 400;
+    border-radius: 0.03rem;
+    float: left;
+}
+.closeBtn{
+    border:0.02rem solid #bdbdbd;
+    color:#6a6a6a;
+}
+.deleClose{
+    color:#fff;
+    background: #F33A5A;
+    margin-left: 0.2rem;
+}

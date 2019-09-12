@@ -137,7 +137,7 @@
 .imgBox{
     width: 0.98rem;
     height: 0.98rem;
-    background: url("../data/images/submitImg.png") no-repeat;
+    background: url("../../data/images/submitImg.png") no-repeat;
     background-size: 100%;
     position: absolute;
     top:0.39rem;
@@ -175,7 +175,7 @@
     float: left;
 }
 .closeBtn{
-    border:0.01rem solid #bdbdbd;
+    border:0.02rem solid #bdbdbd;
     color:#6a6a6a;
 }
 .deleClose{
