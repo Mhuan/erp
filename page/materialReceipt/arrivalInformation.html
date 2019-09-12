@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+
+    <link rel="stylesheet" href="../../css/arrivalInformation.css">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--标题栏-->
+<div class="navBox">
+    <div class="titleBox">
+        <div class="leftSign"></div>
+        <div style="width: 7.2rem;height: 0.96rem;line-height: 0.96rem;">到货信息</div>
+        <div class="addBtn">添加</div>
+    </div>
+</div>
+
+<section style="margin-top: 0.96rem;margin-bottom: 1rem">
+
+    <div class="information">
+        <div class="proName">
+            <div>阿莫西林分散片 0.6g</div>
+            <div class="developBtn" onclick="develop(this)">展开</div>
+            <div class="midRightSign"></div>
+        </div>
+        <div class="mainInf">
+            <div>
+                <div class="infTitle">生产厂商：</div>
+                <div>南京同仁堂药业有限公司</div>
+            </div>
+            <div style="position: relative">
+                <div class="infTitle">采购数量：</div>
+                <div>35345</div>
+                <!--            共收货件数-->
+                <div class="proCount">共收货3456</div>
+            </div>
+            <div>
+                <div class="infTitle">批准文号：</div>
+                <div>SDR35345</div>
+            </div>
+            <div>
+                <div class="infTitle">单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</div>
+                <div><div  style="float: left;width: 1.15rem">片</div> <div style="margin-left: 1.15rem">件包装数量：456</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="informationList">
+        <div class="listTitle">
+            到货信息（3）
+        </div>
+<!--        <div>-->
+<!--            <ul class="listBox">-->
+<!--                <li>-->
+<!--                    <div class="partNo_01">-->
+<!--                        <div>-->
+<!--                            <div class="circle"  onclick="selectBtn(this)">-->
+<!--                                <div class="checkTheNumber"></div>-->
+<!--                            </div>-->
+<!--                            批号 AAA121112-->
+<!--                        </div>-->
+<!--                        <div>收货数量 346</div>-->
+<!--                    </div>-->
+<!--                    <div class="partNo_02">-->
+<!--                        <div>件数   <span>5</span></div>-->
+<!--                        <div>零散数量    <span>33</span></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="partNo_01">-->
+<!--                        <div>-->
+<!--                            <div class="circle"  onclick="selectBtn(this)">-->
+<!--                                <div class="checkTheNumber"></div>-->
+<!--                            </div>-->
+<!--                            批号 AAA121112-->
+<!--                        </div>-->
+<!--                        <div>收货数量 346</div>-->
+<!--                    </div>-->
+<!--                    <div class="partNo_02">-->
+<!--                        <div>件数   <span>5</span></div>-->
+<!--                        <div>零散数量    <span>33</span></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="partNo_01">-->
+<!--                        <div>-->
+<!--                            <div class="circle"  onclick="selectBtn(this)">-->
+<!--                                <div class="checkTheNumber"></div>-->
+<!--                            </div>-->
+<!--                            批号 AAA121112-->
+<!--                        </div>-->
+<!--                        <div>收货数量 346</div>-->
+<!--                    </div>-->
+<!--                    <div class="partNo_02">-->
+<!--                        <div>件数   <span>5</span></div>-->
+<!--                        <div>零散数量    <span>33</span></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="partNo_01">-->
+<!--                        <div>-->
+<!--                            <div class="circle"  onclick="selectBtn(this)">-->
+<!--                                <div class="checkTheNumber"></div>-->
+<!--                            </div>-->
+<!--                            批号 AAA121112-->
+<!--                        </div>-->
+<!--                        <div>收货数量 346</div>-->
+<!--                    </div>-->
+<!--                    <div class="partNo_02">-->
+<!--                        <div>件数   <span>5</span></div>-->
+<!--                        <div>零散数量    <span>33</span></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="partNo_01">-->
+<!--                        <div>-->
+<!--                            <div class="circle"  onclick="selectBtn(this)">-->
+<!--                                <div class="checkTheNumber"></div>-->
+<!--                            </div>-->
+<!--                            批号 AAA121112-->
+<!--                        </div>-->
+<!--                        <div>收货数量 346</div>-->
+<!--                    </div>-->
+<!--                    <div class="partNo_02">-->
+<!--                        <div>件数   <span>5</span></div>-->
+<!--                        <div>零散数量    <span>33</span></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="partNo_01">-->
+<!--                        <div>-->
+<!--                            <div class="circle"  onclick="selectBtn(this)">-->
+<!--                                <div class="checkTheNumber"></div>-->
+<!--                            </div>-->
+<!--                            批号 AAA121112-->
+<!--                        </div>-->
+<!--                        <div>收货数量 346</div>-->
+<!--                    </div>-->
+<!--                    <div class="partNo_02">-->
+<!--                        <div>件数   <span>5</span></div>-->
+<!--                        <div>零散数量    <span>33</span></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+    </div>
+
+<!--    无数据展示添加按钮-->
+    <div class="emptyData">
+        <div class="addImg"></div>
+        <div class="addInfor">添加到货信息</div>
+    </div>
+</section>
+
+
+
+
+<div class="bottomBtn">
+    <div class="deleBtn" onclick="deleSelect(this)">删除</div>
+    <div class="nextBtn" onclick="deleWindow(this)">继续收货</div>
+</div>
+
+
+
+<!--弹框-->
+<div class="mask" id="mask" style="height:0rem"></div>
+
+<!--删除框-->
+<div class="deleWindow" id="deleWindow">
+    <div class="imgBox">
+
+    </div>
+    <div class="tooltip">
+        确认删除所选到货信息？
+    </div>
+    <div class="btnStyle">
+        <div class="closeBtn" onclick="dele(this)">取消</div>
+        <div class="deleClose" onclick="dele(this)">确定删除</div>
+    </div>
+</div>
+<script>
+    function develop(val){//展开收起按钮
+        var tar = document.getElementsByClassName("mainInf");
+        var dis = document.getElementsByClassName("proName")[0].children[2];
+        console.log(dis)
+        if(val.innerHTML === '展开'){
+            tar[0].children[2].style.display = 'block';
+            tar[0].children[3].style.display = 'block';
+            document.getElementsByClassName("proCount")[0].style.display = 'block';
+            val.innerHTML = '收起';
+            val.style.color = "#F33A5A";
+            dis.classList.toggle("midUpSign");
+            dis.classList.toggle("midRightSign")
+        }
+        else if(val.innerHTML === '收起'){
+            tar[0].children[2].style.display = 'none';
+            tar[0].children[3].style.display = 'none';
+            document.getElementsByClassName("proCount")[0].style.display = 'none';
+            val.innerHTML = '展开';
+            val.style.color = "#6a6a6a";
+            dis.classList.toggle("midUpSign");
+            dis.classList.toggle("midRightSign")
+        }
+    }
+
+
+    function bodyScroll(event){
+        event.preventDefault();
+    }
+    function deleWindow(){//删除弹出框框
+        document.getElementById("mask").style.display = 'block';
+        document.getElementById("deleWindow").style.display = 'block';
+        var maskHeight = window.screen.height+'px';
+        document.getElementById("mask").style.height = maskHeight;
+        /*禁用滚动条*/
+        // function bodyScroll(event){
+        //     event.preventDefault();
+        // }
+        document.body.addEventListener('touchmove',bodyScroll,false);
+        document.body.style.position='fixed';
+        document.body.style.width='100%';
+    }
+
+    function deleSelect(sel){//展示删除状态
+        var cir = document.getElementsByClassName("circle");
+        if(sel.innerHTML === '删除'){
+            console.log(document.getElementsByClassName("circle"));
+            for(var i=0;i<cir.length;i++){
+                cir[i].style.display = 'block';
+            }
+            sel.innerHTML = '取消';
+            sel.parentNode.children[1].innerHTML = "删除（0）"
+        }
+        else if(sel.innerHTML === '取消'){
+            sel.innerHTML = '删除';
+            sel.parentNode.children[1].innerHTML = "继续收货";
+            for(var i=0;i<cir.length;i++){
+                cir[i].style.display = 'none';
+            }
+
+        }
+
+    }
+    function selectBtn(val){
+        val.classList.toggle('circleStyle');
+        var sel = document.getElementsByClassName("circleStyle").length;
+        document.getElementsByClassName("nextBtn")[0].innerHTML = "删除（"+sel+"）";
+    }
+    function dele(itm){
+        if(itm.innerHTML === '确定删除' ){
+            var objective = document.getElementsByClassName("partNo_01");
+            for(var i=0;i<objective.length;i++){
+                if(objective[i].children[0].querySelector(".circleStyle")){
+                    console.log(objective[i].parentNode);
+                     objective[i].parentNode.remove();
+                }
+            }
+            document.getElementById("mask").style.display = 'none';
+            document.getElementById("deleWindow").style.display = 'none';
+            document.body.addEventListener('touchmove',bodyScroll,true);
+
+            document.body.style.position='';
+            document.body.style.width='';
+        }
+        else if(itm.innerHTML === '取消'){
+            document.getElementById("mask").style.display = 'none';
+            document.getElementById("deleWindow").style.display = 'none';
+            document.body.addEventListener('touchmove',bodyScroll,true);
+
+            document.body.style.position='';
+            document.body.style.width='';
+        }
+    }
+</script>
+</body>
+</html>

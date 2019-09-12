@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="titleBox">
+        <div>个人中心</div>
+    </div>
+    <div class="listBox">
+        <ul>
+            <li class="liststyle  bgImg_01"  onclick="toPage()">
+                <div class="fontSizeStyle">采购收货</div>
+            </li>
+            <li class="liststyle  bgImg_02">
+                <div class="fontSizeStyle">采购验收</div>
+            </li>
+            <li class="liststyle  bgImg_03">
+                <div class="fontSizeStyle">收货上架</div>
+            </li>
+            <li class="liststyle  bgImg_04">
+                <div class="fontSizeStyle">销售订单拣货</div>
+            </li>
+            <li class="liststyle  bgImg_02">
+                <div class="fontSizeStyle">库存盘点</div>
+            </li>
+            <li class="liststyle  bgImg_01">
+                <div class="fontSizeStyle">商品盘点</div>
+            </li>
+            <li class="liststyle  bgImg_02">
+                <div class="fontSizeStyle">药品移架</div>
+            </li>
+            <li class="liststyle  bgImg_01">
+                <div class="fontSizeStyle">药品停售</div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+ function toPage(page,val){
+     window.location.href = "page/materialReceipt/index.html";
+ }
+</script>
+</html>
