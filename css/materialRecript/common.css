@@ -160,3 +160,10 @@ a,ul,li,input,select{
     color:#fff;
     font-size: 0.32rem;
 }
+
+.closeSin{
+    width: 0.39rem;
+    height: 0.39rem;
+    background: #c6c6c6;
+    border-radius: 50%;
+}
