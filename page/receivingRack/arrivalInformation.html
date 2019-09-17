@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <title></title>
 
-    <link rel="stylesheet" href="../../css/checkAndAccept/arrivalInformation.css">
+    <link rel="stylesheet" href="../../css/receivingRack/arrivalInformation.css">
 
-    <link rel="stylesheet" href="../../css/checkAndAccept/common.css">
+    <link rel="stylesheet" href="../../css/receivingRack/common.css">
     <script src="../../js/common.js"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
     <div class="titleBox">
         <div class="leftSign" onclick="history(-1)"></div>
         <div style="width: 7.2rem;height: 0.96rem;line-height: 0.96rem;">验收信息</div>
-        <div class="addBtn">添加</div>
+        <div class="addBtn" onclick="deleWindow()">提交</div>
     </div>
 </div>
 
@@ -64,7 +64,20 @@
                             </div>
                             批号 AAA121112
                         </div>
-                        <div class="">合格</div>
+                        <div style="display: none">合格</div>
+                        <div class="midRightSign"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="partNo_02">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div style="display: none">质疑</div>
+                        <div class="midRightSign"></div>
                     </div>
                 </li>
                 <li>
@@ -75,7 +88,8 @@
                             </div>
                             批号 AAA121112
                         </div>
-                        <div class="">质疑</div>
+                        <div style="display: none">合格</div>
+                        <div class="midRightSign"></div>
                     </div>
                 </li>
                 <li>
@@ -86,7 +100,8 @@
                             </div>
                             批号 AAA121112
                         </div>
-                        <div class="">合格</div>
+                        <div style="display: none">质疑</div>
+                        <div class="midRightSign"></div>
                     </div>
                 </li>
                 <li>
@@ -97,10 +112,11 @@
                             </div>
                             批号 AAA121112
                         </div>
-                        <div class="">质疑</div>
+                        <div style="display: none">质疑</div>
+                        <div class="midRightSign"></div>
                     </div>
                 </li>
-                <li>
+                <li class="partNo_03">
                     <div class="">
                         <div>
                             <div class="circle"  onclick="selectBtn(this)">
@@ -108,7 +124,40 @@
                             </div>
                             批号 AAA121112
                         </div>
-                        <div class="">质疑</div>
+                        <div style="display: none">质疑</div>
+                        <div class="midRightSign"></div>
+                        <div style="width: 100%;height:auto;">
+                            <div class="showNumber">
+                                <div><span style="color: #BDBDBD;">货位</span>   ASD123</div>
+                                <div style="margin-left: 0.1rem"><span style="color: #BDBDBD;">上架数量</span>   33</div>
+                            </div>
+                            <div class="showNumber">
+                                <div><span style="color: #BDBDBD;">货位</span>   ASD123</div>
+                                <div style="margin-left: 0.1rem"><span style="color: #BDBDBD;">上架数量</span>   33</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="partNo_04">
+                    <div class="">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div style="display: none">质疑</div>
+                        <div class="midRightSign"></div>
+                        <div style="width: 100%;height:auto;">
+                            <div class="showNumber">
+                                <div><span style="color: #BDBDBD;">货位</span>   ASD123</div>
+                                <div style="margin-left: 0.1rem"><span style="color: #BDBDBD;">上架数量</span>   33</div>
+                            </div>
+                            <div class="showNumber">
+                                <div><span style="color: #BDBDBD;">货位</span>   ASD123</div>
+                                <div style="margin-left: 0.1rem"><span style="color: #BDBDBD;">上架数量</span>   33</div>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -121,6 +170,26 @@
         <div class="addInfor">添加到货信息</div>
     </div>
 </section>
+
+
+<!--弹框-->
+<div class="mask" id="mask" style="height:0rem"></div>
+
+<div class="deleWindow" id="deleWindow">
+    <div class="imgBox">
+
+    </div>
+    <div class="tooltip">
+        上架数量为4300
+    </div>
+    <div class="tooltip_af">
+        该商品应上架4556
+    </div>
+    <div class="btnStyle">
+<!--        <div class="closeBtn" onclick="dele(this)">取消</div>-->
+        <div class="deleClose" onclick="dele(this)">确定删除</div>
+    </div>
+</div>
 
 <script>
     function develop(val){//展开收起按钮
@@ -144,6 +213,19 @@
             dis.classList.toggle("midUpSign");
             dis.classList.toggle("midRightSign")
         }
+    }
+    function deleWindow(){//删除弹出框框
+        document.getElementById("mask").style.display = 'block';
+        document.getElementById("deleWindow").style.display = 'block';
+        var maskHeight = window.screen.height+'px';
+        document.getElementById("mask").style.height = maskHeight;
+        /*禁用滚动条*/
+        // function bodyScroll(event){
+        //     event.preventDefault();
+        // }
+        document.body.addEventListener('touchmove',bodyScroll,false);
+        document.body.style.position='fixed';
+        document.body.style.width='100%';
     }
     (function(){
         var list = document.getElementsByClassName("listBox");

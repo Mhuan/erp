@@ -19,18 +19,43 @@ a,ul,li,input,select{
 .selBox{
     width: 7.2rem;
     height:0.95rem;
-    background: linear-gradient(85deg, #4850EE , #336EF0); /* 标准的语法 */
+    background: linear-gradient(85deg, #FFA02F, #FFA237); /* 标准的语法 */
     padding-top: 0.13rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 }
+
+
+/*加号按钮*/
+.plusSign{
+    width: 0.32rem;
+    height: 0.32rem;
+    border-radius: 50%;
+    border:0.04rem solid #564333;
+    position: relative;
+}
+.rowLine,.colLine{
+    position: absolute;
+    border:0.02rem solid #564333;
+}
+.rowLine{
+    width: 0.18rem;
+    left: 0.06rem;
+    top: 0.14rem;
+}
+.colLine{
+    height: 0.18rem;
+    top: 0.05rem;
+    left: 0.15rem;
+}
+
 /*箭头*/
 /*中号右箭头*/
 .midRightSign{
-    width: 0.19rem;
-    height: 0.19rem;
+    width: 0.19rem !important;
+    height: 0.19rem !important;
     border-top: 0.02rem solid #B2B1B1;
     border-right: 0.02rem solid #B2B1B1;
     transform: rotate(45deg);

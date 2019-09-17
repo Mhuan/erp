@@ -165,7 +165,7 @@
     left:0.3rem;
 }
 .closeBtn,.deleClose{
-    width: 2.19rem;
+    width: 2.16rem;
     height: 0.74rem;
     line-height: 0.74rem;
     text-align: center;
@@ -182,4 +182,5 @@
     color:#fff;
     background: #F33A5A;
     margin-left: 0.2rem;
+    border:0.02rem solid #F33A5A;
 }

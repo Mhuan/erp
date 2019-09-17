@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="../../css/receivingRack/common.css">
+    <link rel="stylesheet" href="../../css/receivingRack/batchNumberAcceptance.css">
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+
+    <div class="navBox">
+        <div class="titleBox">
+            <div class="leftSign" onclick="history(-1)"></div>
+            <div style="width: 7.2rem;height: 0.96rem;line-height: 0.96rem;">阿莫西林分散片</div>
+            <div class="addBtn" onclick="add()">添加</div>
+            <div class="plusBox" onclick="add()">
+                <div class="plusSign">
+                    <div class="rowLine"></div>
+                    <div class="colLine"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <div style="font-size: 0.32rem;color:#333;font-weight: bold;text-indent: 0.23rem">批号：WE3545111</div>
+        <div style="font-size: 0.26rem;color:#a9a9a9;font-weight: 400;text-align: right;width: 3.35rem">验收数量:234</div>
+    </div>
+    <div class="mainBox">
+        <div class="mainCon">
+            <div>
+                <div class="titleSty">实际上架数量</div>
+                <div class="inpBox">
+                    <input type="text" placeholder="请输入上架数量">
+                </div>
+            </div>
+            <div>
+                <div class="titleSty">货位</div>
+                <div class="inpBox">
+                    <input type="text" placeholder="点击扫描货位号">
+                </div>
+            </div>
+        </div>
+        <div class="mainCon">
+            <div>
+                <div class="titleSty">实际上架数量</div>
+                <div class="inpBox">
+                    <input type="text" placeholder="请输入上架数量">
+                </div>
+            </div>
+            <div>
+                <div class="titleSty">货位</div>
+                <div class="inpBox">
+                    <input type="text" placeholder="点击扫描货位号">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="bottomBtn">
+        <div>确定</div>
+    </div>
+    <script>
+        function add(){
+            var inHtml = "";
+            var tar = document.getElementsByClassName("mainBox")[0].innerHTML;
+            inHtml = ' <div class="mainCon">' +
+                '            <div>' +
+                '                <div class="titleSty">实际上架数量</div>' +
+                '                <div class="inpBox">' +
+                '                    <input type="text" placeholder="请输入上架数量">' +
+                '                </div>' +
+                '            </div>' +
+                '            <div>' +
+                '                <div class="titleSty">货位</div>' +
+                '                <div class="inpBox">' +
+                '                    <input type="text" placeholder="点击扫描货位号">' +
+                '                </div>' +
+                '            </div>' +
+                '        </div>';
+
+            document.getElementsByClassName("mainBox")[0].innerHTML = tar+inHtml;
+        }
+    </script>
+</body>
+</html>

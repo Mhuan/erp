@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="../../css/checkAndAccept/common.css">
+    <link rel="stylesheet" href="../../css/checkAndAccept/check.css">
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <div class="navBox">
+        <div class="titleBox">
+            <div class="leftSign" onclick="history(-1)"></div>
+            <div style="width: 7.2rem;height: 0.96rem;line-height: 0.96rem;">阿莫西林分散片</div>
+            <div class="addBtn">确定</div>
+        </div>
+    </div>
+
+    <div class="basicInformation">
+        <div class="lotNumber">
+            <div style="font-size: 0.32rem;color: #333;font-weight: bold;">批号：WE3545111</div>
+            <div style="font-size: 0.26rem;color: #A9A9A9;font-weight: 400;text-align: right;padding-right: 0.19rem;width: 3.41rem;">收货数量2133</div>
+        </div>
+        <div class="productDate">
+            <div>生产日期：2019-09-12</div>
+            <div>有效期至：2024-08-12</div>
+        </div>
+    </div>
+
+    <div class="mainBox">
+        <div class="partNo_02">
+            <div>整件数量   <span>5</span></div>
+            <div>零散数量   <span>33</span></div>
+        </div>
+        <div class="inputSty">
+            <div style="font-size: 0.34rem;color: #6A6A6A;">抽检数量</div>
+            <div style="width: 4.93rem;margin-left: 0.37rem;position: relative">
+                <input type="text" placeholder="" value="5"  onclick="onShow()" >
+                <div style="position: absolute;top: 0rem;right: 1rem;color:#bdbdbd;" id="isShow" >（可修改抽检数量）</div>
+            </div>
+        </div>
+        <div>
+            <div class="qualified" onclick="selC(this)">
+                <div class="unqualified-Icon"></div>
+                <div class="fontColor">合格</div>
+            </div>
+            <div class="query" onclick="selC(this)">
+                <div class="unquery-Icon"></div>
+                <div class="fontColor">质疑</div>
+            </div>
+        </div>
+        <div class="inputSty">
+            <div style="font-size: 0.34rem;color: #6A6A6A;">质疑原因</div>
+            <div style="width: 4.93rem;margin-left: 0.37rem;">
+                <input type="text" placeholder="请输入质疑原因" value="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+            function selC(val){//选择合格和质疑
+               val.classList.toggle("selColor");
+                var is = val.children[0];
+                val.children[0].classList.toggle("sel");
+                if(val.children[1].innerHTML === '合格'){
+                    var bro = val.parentNode.children[1];
+                    if(is.classList.contains("sel")){
+                        is.classList.add("qualified-Icon");
+                        is.classList.remove("unqualified-Icon");
+                        bro.classList.remove("selColor");
+                        bro.children[0].classList.remove("sel");
+                        bro.children[0].classList.add("unquery-Icon");
+                        bro.children[0].classList.remove("query-Icon");
+                    }
+                    else{
+                        is.classList.add("unqualified-Icon");
+                        is.classList.remove("qualified-Icon");
+                    }
+                }
+                if(val.children[1].innerHTML === '质疑'){
+                    var bro = val.parentNode.children[0];
+                    if(is.classList.contains("sel")){
+                        is.classList.add("query-Icon");
+                        is.classList.remove("unquery-Icon");
+                        bro.classList.remove("selColor");
+                        bro.children[0].classList.remove("sel");
+                        bro.children[0].classList.add("unqualified-Icon");
+                        bro.children[0].classList.remove("qualified-Icon");
+                    }
+                    else{
+                        is.classList.add("unquery-Icon");
+                        is.classList.remove("query-Icon");
+                    }
+                }
+
+            }
+
+            // 抽检修改展示效果
+            function  onShow(){
+                var inp = document.getElementById("isShow");
+                    inp.style.display = "none";
+            }
+            function onH(){
+                var inp = document.getElementById("isShow");
+                    inp.style.display = "block";
+            }
+
+    </script>
+</body>
+</html>
