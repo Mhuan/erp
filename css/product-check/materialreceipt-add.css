@@ -1,0 +1,144 @@
+.navBox{
+    width: 7.2rem;
+    height: 0.96rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.titleBox{
+    width: 7.2rem;
+    height:0.96rem;
+    background: linear-gradient(85deg, #4850EE , #336EF0);
+    font-size: 0.36rem;
+    color:#fff;
+    text-align: center;
+    position: relative;
+}
+.leftSign{
+    position: absolute;
+    top: 0.31rem;
+    left: 0.24rem;
+}
+.addBtn{
+    width: auto;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    font-size: 0.32rem;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    right: 0.22rem;
+    top:0;
+}
+
+.container{
+    width: 7.2rem;
+    height: auto;
+    background: #fff;
+}
+.listBox{
+    width: 6.67rem;
+    margin: 0 auto;
+    height: 1.3rem;
+    border-bottom: .02rem solid #f3f3f3;
+}
+
+.leftStyle,.rightStyle{
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+.leftStyle{
+    float: left;
+    width: 1.7rem;
+    color: #6a6a6a;
+    font-size: 0.34rem;
+    font-weight: 400;
+}
+.rightStyle{
+    margin-left: 1.7rem;
+}
+.rightStyle>input{
+    display: block;
+    width: 4rem;
+    border: none;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    margin-left: 0.8rem;
+    outline-style: none;
+    text-align: right ;
+    font-size: 0.34rem;
+    font-weight: 400;
+}
+
+
+.information{
+    width: 7.2rem;
+    height:auto;
+    background: #fff;
+    position: relative;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.96rem;
+}
+
+.proName{
+    position: relative;
+    height: 0.94rem;
+    line-height: 0.94rem;
+    width: 6.68rem;
+    margin-left: 0.2rem;
+    border-bottom: 0.02rem solid #f3f3f3;
+}
+.midRightSign{
+    position: absolute;
+    top:0.35rem;
+    right:0rem
+}
+
+.mainInf{
+    width: 6.68rem;
+    height: auto;
+    margin-left: 0.2rem;
+    font-size: 0.3rem;
+    color:#6a6a6a;
+    font-weight: 400;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+.infTitle{
+    width: 1.5rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    float: left;
+}
+
+.mainInf>div>div:nth-child(2){
+    margin-left: 1.5rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+.proCount{
+    position: absolute;
+    width: auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    top: 0;
+    left:2.85rem;
+    color: #EC9738;
+    font-size: 0.3rem;
+    font-weight: 400;
+}
+
+.titleStyle{
+    width: 7.2rem;
+    height:0.91rem;
+    line-height: 0.91rem;
+    font-size: 0.32rem;
+    color:#333;
+    font-weight: bold;
+    text-indent: 0.26rem;
+    text-align: left;
+}

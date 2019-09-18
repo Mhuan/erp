@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+
+    <link rel="stylesheet" href="../../css/product-check/arrivalInformation.css">
+
+    <link rel="stylesheet" href="../../css/product-check/common.css">
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--标题栏-->
+<div class="navBox">
+    <div class="titleBox">
+        <div class="leftSign" onclick="history(-1)"></div>
+        <div style="width: 7.2rem;height: 0.96rem;line-height: 0.96rem;">验收信息</div>
+        <div class="addBtn">添加</div>
+    </div>
+</div>
+
+<section style="margin-top: 0.96rem;margin-bottom: 1rem">
+
+    <div class="information">
+        <div class="proName">
+            <div>阿莫西林分散片 0.6g</div>
+            <div class="developBtn" onclick="develop(this)">展开</div>
+            <div class="midRightSign"></div>
+        </div>
+        <div class="mainInf">
+            <div>
+                <div class="infTitle">生产厂商：</div>
+                <div>南京同仁堂药业有限公司</div>
+            </div>
+            <div style="position: relative">
+                <div class="infTitle">采购数量：</div>
+                <div>35345</div>
+                <!--            共收货件数-->
+                <div class="proCount">共收货3456</div>
+            </div>
+            <div>
+                <div class="infTitle">批准文号：</div>
+                <div>SDR35345</div>
+            </div>
+            <div>
+                <div class="infTitle">单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</div>
+                <div><div  style="float: left;width: 1.15rem">片</div> <div style="margin-left: 1.15rem">件包装数量：456</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="informationList">
+        <div class="listTitle">
+            验收（3）
+        </div>
+        <div>
+            <ul class="listBox">
+                <li>
+                    <div class="partNo_01">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div class="">合格</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div class="">质疑</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div class="">合格</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div class="">质疑</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <div>
+                            <div class="circle"  onclick="selectBtn(this)">
+                                <div class="checkTheNumber"></div>
+                            </div>
+                            批号 AAA121112
+                        </div>
+                        <div class="">质疑</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!--    无数据展示添加按钮-->
+    <div class="emptyData">
+        <div class="addImg"></div>
+        <div class="addInfor">添加到货信息</div>
+    </div>
+</section>
+
+<script>
+    function develop(val){//展开收起按钮
+        var tar = document.getElementsByClassName("mainInf");
+        var dis = document.getElementsByClassName("proName")[0].children[2];
+        if(val.innerHTML === '展开'){
+            tar[0].children[2].style.display = 'block';
+            tar[0].children[3].style.display = 'block';
+            document.getElementsByClassName("proCount")[0].style.display = 'block';
+            val.innerHTML = '收起';
+            val.style.color = "#F33A5A";
+            dis.classList.toggle("midUpSign");
+            dis.classList.toggle("midRightSign")
+        }
+        else if(val.innerHTML === '收起'){
+            tar[0].children[2].style.display = 'none';
+            tar[0].children[3].style.display = 'none';
+            document.getElementsByClassName("proCount")[0].style.display = 'none';
+            val.innerHTML = '展开';
+            val.style.color = "#6a6a6a";
+            dis.classList.toggle("midUpSign");
+            dis.classList.toggle("midRightSign")
+        }
+    }
+    (function(){
+        var list = document.getElementsByClassName("listBox");
+        document.getElementsByClassName("listTitle")[0].innerHTML = "验收（"+list[0].children.length+"）";
+        for(var i = 0;i<list[0].children.length;i++){
+            if(i%2 === 0){
+                list[0].children[i].children[0].classList.add("partNo_01");
+            }
+            else if(i%2 !== 0){
+                list[0].children[i].children[0].classList.add("partNo_02");
+            }
+            if(list[0].children[i].children[0].children[1].innerHTML === "合格"){
+                list[0].children[i].children[0].children[1].classList.add("qualified");
+            }
+            else{
+                list[0].children[i].children[0].children[1].classList.add("query");
+            }
+        }
+    })()
+</script>
+</body>
+</html>

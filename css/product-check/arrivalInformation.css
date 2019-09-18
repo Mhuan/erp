@@ -13,7 +13,7 @@ html,body{
 .titleBox{
     width: 7.2rem;
     height:0.96rem;
-    background: linear-gradient(85deg, #FFA02F , #FFA237);
+    background: linear-gradient(85deg, #4850EE , #336EF0);
     font-size: 0.36rem;
     color:#fff;
     text-align: center;
@@ -129,26 +129,21 @@ html,body{
 }
 
 .listBox{
-    width: 7.2rem;
+    width: 6.78rem;
     height: auto;
     background: #fff;
-    /*padding-left: 0.2rem;*/
-    /*padding-right: 0.22rem;*/
+    padding-left: 0.2rem;
+    padding-right: 0.22rem;
 }
 .listBox>li{
     width: 6.78rem;
-    min-height: 1.08rem;
+    height: 1.08rem;
     background: #fff;
-    margin: 0 auto;
     /*border-bottom:0.02rem solid #f3f3f3;*/
-}
-
-.partNo_01>.midRightSign,.partNo_02>.midRightSign{
-    right: 0.3rem!important;
 }
 .partNo_01{
     width: 6.09rem;
-    min-height: 1.08rem;
+    height: 1.08rem;
     padding-left: 0.39rem;
     padding-right: 0.3rem;
     position: relative;
@@ -175,15 +170,14 @@ html,body{
 
 .partNo_02{
     width: 6.09rem;
-    min-height: 1.08rem;
+    height: 1.08rem;
     background: #F8F8F8;
     padding-left: 0.39rem;
     padding-right: 0.3rem;
-    position: relative;
 }
-.partNo_02>div:not(:last-child){
+.partNo_02>div{
     float: left;
-    width: 4rem;
+    width: 3.045rem;
     height: 1rem;
     line-height: 1rem;
 }
@@ -194,57 +188,6 @@ html,body{
     font-weight: bold;
 
 }
-.partNo_03{
-    width: 7.2rem !important;
-    background: #f8f8f8 !important;
-}
-.partNo_04{
-    width: 7.2rem !important;
-    background: #fff !important;
-}
-.partNo_03>.partNo_02{
-    width: 6.78rem !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-}
-.partNo_04>.partNo_01{
-    width: 6.78rem !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-}
-
-.partNo_03 .showNumber>div{
-    background: #fff !important;
-}
-
-.partNo_04 .showNumber>div{
-    background: #f8f8f8 !important;
-}
-.showNumber{
-    width: 7.2rem;
-    height: auto;
-    line-height: 0.9rem;
-    font-size: 0.34rem;
-    padding-bottom: 0.3rem;
-}
-
-.showNumber>div{
-    float: left;
-    width: 3.36rem;
-    height: 0.9rem;
-    line-height: 0.9rem;
-    text-align: center;
-}
-.showNumber:before{
-    content: "";
-    display: table;
-}
-.showNumber:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .query{
     font-size: 0.28rem;
     color: #EC9738;
@@ -300,7 +243,7 @@ html,body{
 .imgBox{
     width: 0.98rem;
     height: 0.98rem;
-    background: url("../../data/images/icon2.png") no-repeat;
+    background: url("../../data/images/deleteSign.png") no-repeat;
     background-size: 100%;
     position: absolute;
     top:0.39rem;
@@ -314,21 +257,9 @@ html,body{
     left: 0;
     width: 5.2rem;
     height: 0.3rem;
-    font-size: 0.34rem;
+    font-size: 0.32rem;
     color: #323232;
     font-weight: bold;
-    text-align: center;
-}
-
-.tooltip_af{
-    position: absolute;
-    top: 2.2rem;
-    left: 0;
-    width: 5.2rem;
-    height: 0.3rem;
-    font-size: 0.28rem;
-    color: #323232;
-    font-weight: 400;
     text-align: center;
 }
 
@@ -356,7 +287,7 @@ html,body{
 .deleClose{
     color:#fff;
     background: #F33A5A;
-    /*margin-left: 0.2rem;*/
+    margin-left: 0.2rem;
 }
 
 
@@ -412,23 +343,3 @@ html,body{
     border-radius: 0.03rem;
     margin: 0 auto;
 }
-.closeBtn,.deleClose{
-    width: 4.51rem;
-    height: 0.74rem;
-    line-height: 0.74rem;
-    text-align: center;
-    font-size: 0.32rem;
-    font-weight: 400;
-    border-radius: 0.03rem;
-    float: left;
-}
-.closeBtn{
-    border:0.02rem solid #bdbdbd;
-    color:#6a6a6a;
-}
-.deleClose{
-    color:#fff;
-    background: #FFA02F;
-    border:0.02rem solid #FFA02F;
-}
-

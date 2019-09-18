@@ -1,0 +1,162 @@
+html,body{
+    background: #fff !important;
+}
+.navBox{
+    width: 7.2rem;
+    height: 0.96rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.titleBox{
+    width: 7.2rem;
+    height:0.96rem;
+    background: linear-gradient(85deg, #4850EE , #336EF0);
+    font-size: 0.36rem;
+    color:#fff;
+    text-align: center;
+    position: relative;
+}
+.leftSign{
+    position: absolute;
+    top: 0.31rem;
+    left: 0.24rem;
+}
+.addBtn{
+    width: auto;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    font-size: 0.32rem;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    right: 0.22rem;
+    top:0;
+}
+
+
+.basicInformation{
+    width: 7.2rem;
+    height: 1.70rem;
+    margin-top: 0.96rem;
+    background: #f8f8f8;
+}
+.lotNumber{
+    width: 7.2rem;
+    height: 0.85rem;
+}
+.productDate{
+    width: 7.2rem;
+    height: 0.85rem;
+    font-size: 0.30rem;
+    color: #A9A9A9;
+    font-weight: 400;
+}
+.lotNumber>div,.productDate>div{
+    float: left;
+    width: 3.6rem;
+    text-align: left;
+    text-indent: 0.25rem;
+    line-height: 0.85rem;
+}
+
+.mainBox{
+    width: 7.2rem;
+    background: #fff;
+    padding-top: 0.32rem;
+}
+.partNo_02{
+    width: 6.78rem;
+    height: 0.9rem;
+    text-align: center;
+    font-size: 0.34rem;
+    color:#bdbdbd;
+    margin: 0 auto;
+}
+
+.partNo_02 span{
+    color:#333;
+}
+.partNo_02>div{
+    width: 3.36rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background: #f8f8f8;
+    float: left;
+}
+.partNo_02>div:nth-child(2){
+    margin-left: 0.06rem;
+}
+
+.qualified,.query{
+    height: 2rem;
+    width: 1.48rem;
+    float: left;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.qualified{
+    margin-left: 1.5rem;
+}
+.query{
+    margin-left: 1.23rem;
+}
+.unqualified-Icon{
+    width: 1.48rem;
+    height: 1.48rem;
+    background: url("../../data/images/checkQualified-no.png") no-repeat;
+    background-size: 100%;
+}
+.qualified-Icon{
+    width: 1.48rem;
+    height: 1.48rem;
+    background: url("../../data/images/checkQualified.png") no-repeat;
+    background-size: 100%;
+}
+.unquery-Icon{
+    width: 1.48rem;
+    height: 1.48rem;
+    background: url("../../data/images/query-no.png") no-repeat;
+    background-size: 100%;
+}
+.query-Icon{
+    width: 1.48rem;
+    height: 1.48rem;
+    background: url("../../data/images/query.png") no-repeat;
+    background-size: 100%;
+}
+
+.fontColor{
+    font-size: 0.34rem;
+    font-weight: bold;
+    text-align: center;
+    width: 1.48rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+}
+
+.selColor{
+    color:#2571E5;
+}
+
+.inputSty{
+    width: 6.78rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.34rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+.inputSty>div{
+    float: left;
+}
+.inputSty>div>input{
+    height: 0.9rem;
+    width: 4.93rem;
+    line-height: 0.9rem;
+    border: none;
+    outline-style: none;
+    background: #f8f8f8;
+    text-indent: 0.41rem;
+}

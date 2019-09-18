@@ -1,0 +1,57 @@
+html,body{
+    width: 7.2rem;
+    height: auto;
+    background: #fff !important;
+}
+
+.titleBox{
+    width: 7.2rem;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: center;
+    background: #fff;
+    font-size: 0.35rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.listBox{
+    width: 6.87rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0.96rem;
+
+}
+.liststyle{
+    width: 6.45rem;
+    height: 2.48rem;
+    margin: 0 auto;
+}
+
+.bgImg_01{
+    background: url("../../data/images/index_01.png") no-repeat;
+    background-size: 100%;
+}
+.bgImg_02{
+    background: url("../../data/images/index_02.png") no-repeat;
+    background-size: 100%;
+}
+.bgImg_03{
+    background: url("../../data/images/index_03.png") no-repeat;
+    background-size: 100%;
+}
+.bgImg_04{
+    background: url("../../data/images/index_04.png") no-repeat;
+    background-size: 100%;
+}
+.fontSizeStyle{
+    width: 6.45rem;
+    height: 2.48rem;
+    line-height: 2.05rem;
+    text-indent: 0.41rem;
+    font-size: 0.46rem;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+}

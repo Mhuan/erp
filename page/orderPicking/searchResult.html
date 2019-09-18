@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="../../css/orderPicking/common.css">
+    <link rel="stylesheet" href="../../css/orderPicking/materialreceipt-productList.css">
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<!--搜索框-->
+<!--    搜索预览页面-->
+<div class="searchBox">
+    <!--        搜索框-->
+    <div class="selBox">
+        <div class="signBox">
+            <div class="leftSign" onclick="history(-1)"></div>
+        </div>
+        <div class="inputBox_ex">
+            <div style="width: 0.44rem;height:0.57rem;padding-top: 0.21rem;padding-left: 0.31rem;float: left;position: relative">
+                <div class="searchImg"></div>
+            </div>
+            <input type="text" class="searchInput_ex" placeholder="搜索供应商名称或助记码" >
+            <div class="closeSinBox" onclick="closeSearch()">
+                <style>
+                    .closeSinBox {    position: fixed;
+                        top: 0.3rem;
+                        right: 1.4rem;
+                    }
+                </style>
+                <div class="closeSin">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+        </div>
+        <div class="seaBtn">搜索</div>
+    </div>
+<!--            搜索预览列表-->
+    <div style="margin-top: 0.96rem;display: none;">
+        <div onclick="closeSearch()">海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司</div>
+        <div>海口宏达药业有限公司3</div>
+        <div>海口宏达药业有限公司2</div>
+        <div>海口宏达药业有限公司1</div>
+    </div>
+
+</div>
+<!--未处理已处理-->
+
+
+
+<div style="margin-top: 1.1rem;margin-bottom: 1.2rem;">
+    <ul class="proList">
+        <li onclick="toPage()">
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <!--            <div class="midRightSign"></div>-->
+            <!--            未全部到货-->
+            <div class="goodsAfloat" style="display: none;">
+                <div>抽检质疑</div>
+            </div>
+            <!--            全部到货-->
+            <div class="fullDelivery" style="display: none;">抽检合格</div>
+        </li>
+        <li>
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <!--            <div class="midRightSign"></div>-->
+            <div class="fullDelivery" style="display: none;">抽检合格</div>
+        </li>
+        <li  onclick="toPage()" >
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <div class="midRightSign"></div>
+        </li>
+        <li>
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <div class="midRightSign"></div>
+        </li>
+        <li>
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <div class="midRightSign"></div>
+        </li>
+        <li>
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <div class="midRightSign"></div>
+        </li>
+        <li>
+            <div>
+                <div class="name">阿莫西林分散片</div>
+                <div class="norms">规格：0.5g*片</div>
+                <div class="number">批准文号：3435646</div>
+                <div class="firm">生产厂商：南京同仁堂药业有限公司</div>
+            </div>
+            <div class="midRightSign"></div>
+        </li>
+    </ul>
+</div>
+
+<!--&lt;!&ndash;确认收货&ndash;&gt;-->
+<!--<div class="confirmBg"></div>-->
+<!--<div class="confirm" onclick="confirmBtn()">-->
+<!--    <div>确认收货</div>-->
+<!--</div>-->
+
+
+<!--弹框-->
+<div class="mask" id="mask" style="height:0rem"></div>
+
+<!--确认框-->
+<div class="deleWindow" id="deleWindow">
+    <div class="imgBox">
+
+    </div>
+    <div class="tooltip">
+        订单342343232的商品存在不合格商品，您是否确定提交该订单
+    </div>
+    <div class="btnStyle">
+        <div class="closeBtn" onclick="closeWin(this)">不，再次查看</div>
+        <div class="deleClose" onclick="closeWin(this)">立即提交</div>
+    </div>
+</div>
+
+<script>
+    window.onload = function(){//加载完成后搜索框获得焦点
+        document.getElementsByClassName("searchInput")[0].focus();
+    };
+
+
+
+    function confirmBtn(){
+        document.getElementById("mask").style.display = 'block';
+        document.getElementById("deleWindow").style.display = 'block';
+        var maskHeight = window.screen.height+'px';
+        document.getElementById("mask").style.height = maskHeight;
+        /*禁用滚动条*/
+        function bodyScroll(event){
+            event.preventDefault();
+        }
+        document.body.addEventListener('touchmove',bodyScroll,false);
+        document.body.style.position='fixed';
+        document.body.style.width='100%';
+    }
+    function closeWin(val){
+        if(val.innerHTML === '不，再次查看'){
+            document.getElementById("mask").style.display = 'none';
+            document.getElementById("deleWindow").style.display = 'none';
+            function bodyScroll(event){
+                event.preventDefault();
+            }
+            document.body.addEventListener('touchmove',bodyScroll,true);
+            document.body.style.position='';
+            document.body.style.width='';
+        }
+        else if(val.innerHTML === '立即提交'){
+
+        }
+
+    }
+    function toPage() {
+        window.location.href = 'arrivalInformation.html'
+    }
+</script>
+</body>
+</html>

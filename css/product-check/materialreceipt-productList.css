@@ -62,9 +62,9 @@
     height: 0.96rem;
     line-height: 0.96rem;
     text-align: center;
-    color: #D2CAC2;
+    color: #247AFA;
     font-size: 0.32rem;
-    background-color: #f9f0e5;
+    background-color: #e2fbf8;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -137,7 +137,7 @@
 .imgBox{
     width: 0.98rem;
     height: 0.98rem;
-    background: url("../../data/images/icon3.png") no-repeat;
+    background: url("../../data/images/icon1.png") no-repeat;
     background-size: 100%;
     position: absolute;
     top:0.39rem;
@@ -179,7 +179,51 @@
     color:#6a6a6a;
 }
 .deleClose{
-    color:#333;
-    background: #FFAC4B;
+    color:#fff;
+    background: #247AFA;
     margin-left: 0.2rem;
+}
+
+
+.listMain{
+    width: 7.2rem;
+    height: auto;
+}
+.listMain>li{
+    width: 7.2rem;
+    height: auto;
+}
+.itemNo{
+    width: 7.2rem;
+    height: 0.76rem;
+    text-indent: 0.23rem;
+    line-height: 0.76rem;
+    font-size: 0.32rem;
+    color: #333;
+    font-weight: bold;
+    background: #fafafa;
+    position: relative;
+}
+.itemNo>div{
+    width: 3.6rem;
+    float: left;
+}
+.proIns{
+    width: 7.2rem;
+    height: auto;
+    background: #fff;
+    font-size: 0.32rem;
+    color:#333;
+    font-weight: 400;
+    text-indent: 0.23rem;
+}
+.proIns>div{
+    width: 7.2rem;
+    height: 1.3rem;
+    border-top: 0.02rem solid #fafafa;
+}
+.midRightSign{
+    position: absolute;
+    top: 0.25rem;
+    right: 0.26rem;
 }

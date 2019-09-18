@@ -13,7 +13,7 @@ html,body{
 .titleBox{
     width: 7.2rem;
     height:0.96rem;
-    background: linear-gradient(85deg, #FFA02F , #FFA237);
+    background: linear-gradient(85deg, #1AC69C , #1AC69C);
     font-size: 0.36rem;
     color:#fff;
     text-align: center;
@@ -287,7 +287,7 @@ html,body{
 
 .deleWindow{
     width: 5.20rem;
-    height: 3.66rem;
+    height: 4.1rem;
     background: #fff;
     border-radius: 0.03rem;
     position: fixed;
@@ -300,7 +300,7 @@ html,body{
 .imgBox{
     width: 0.98rem;
     height: 0.98rem;
-    background: url("../../data/images/icon2.png") no-repeat;
+    background: url("../../data/images/icon4.png") no-repeat;
     background-size: 100%;
     position: absolute;
     top:0.39rem;
@@ -311,12 +311,12 @@ html,body{
 .tooltip{
     position: absolute;
     top:1.68rem;
-    left: 0;
-    width: 5.2rem;
+    left: 0.7rem;
+    width: 3.81rem;
     height: 0.3rem;
-    font-size: 0.34rem;
-    color: #323232;
-    font-weight: bold;
+    font-size: 0.32rem;
+    color: #333;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -336,11 +336,11 @@ html,body{
     width:4.6rem;
     height: 0.74rem;
     position: absolute;
-    top: 2.68rem;
+    top: 3.1rem;
     left:0.3rem;
 }
 .closeBtn,.deleClose{
-    width: 2.19rem;
+    width: 2.16rem;
     height: 0.74rem;
     line-height: 0.74rem;
     text-align: center;
@@ -356,7 +356,7 @@ html,body{
 .deleClose{
     color:#fff;
     background: #F33A5A;
-    /*margin-left: 0.2rem;*/
+    margin-left: 0.2rem;
 }
 
 
@@ -412,23 +412,14 @@ html,body{
     border-radius: 0.03rem;
     margin: 0 auto;
 }
-.closeBtn,.deleClose{
-    width: 4.51rem;
-    height: 0.74rem;
-    line-height: 0.74rem;
-    text-align: center;
-    font-size: 0.32rem;
-    font-weight: 400;
-    border-radius: 0.03rem;
-    float: left;
-}
+
 .closeBtn{
     border:0.02rem solid #bdbdbd;
     color:#6a6a6a;
 }
 .deleClose{
     color:#fff;
-    background: #FFA02F;
-    border:0.02rem solid #FFA02F;
+    background: #1AC69C;
+    border:0.02rem solid #1AC69C;
 }
 
